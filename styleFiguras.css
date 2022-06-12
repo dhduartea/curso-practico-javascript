@@ -1,0 +1,73 @@
+:root{
+    --background__color:#181a18;
+    --text__color:#FFF;
+    --title__color:#c1d1b1;
+    --input-text__color:#97dd97;
+    --section__color:#253625;
+    --input-background__color:#3e583e;
+    --buttom-bacground__color:#445044;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text__color);
+    background-color: var(--background__color);
+}
+input{
+    padding: 8px;
+    background-color: var(--input-background__color);
+    color: var(--input-text__color);
+    border: none;
+    border-radius: 4px;
+}
+button{
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--buttom-bacground__color);
+    font-weight: bold;
+    color: var(--input-text__color);
+    cursor: pointer;
+}
+header{
+    padding: 20px;
+    background-color: var(--section__color);
+}
+header h1{
+    color: var(--title__color);
+}
+.mainContainer{
+    display: grid;
+    grid-auto-rows: minmax(20rem, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+    width: 100%;
+    place-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.mainContainer section, .mainContainer section form{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.mainContainer section{
+    margin: auto;
+    background-color: var(--section__color);
+    border-radius: 2rem;
+    padding: 20px;
+    box-shadow: 2px 2px 4px green;
+    
+}
