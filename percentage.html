@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePercentage.css">
+    <script src="https://kit.fontawesome.com/c764c0ee10.js" crossorigin="anonymous"></script>
+    <title>Percentage</title>
+</head>
+
+<body>
+    <script src="percentage.js"></script>
+    <header>
+        <h1>Descuentos</h1>
+    </header>
+    <main class="main-container">
+        <section class="discount-calculator">
+            <i class="fa-solid fa-tags"></i>
+            <h3 class="discount-calculator--title">¿Cuánto sería mi descuento?</h3>
+            <form action="" id="totalDiscount" class="discount-calculator--form">
+                <label for="totalPrice">
+                    Ingrese el precio
+                </label>
+                <input type="number" id="totalPrice" name="totalPrice" placeholder="Ej: 60">
+                <label for="percentageDiscount">
+                    Ingrese el porcentaje de descuento (sin el %)
+                </label>
+                <input type="number" id="percentageDiscount" name="percentageDiscount" placeholder="Ej: 20">
+                <button type="button" onclick="calcularDescuento()" form="totalDiscount">Calcular el descuento</button>
+                <span class="output-dicount">6000$</span>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
