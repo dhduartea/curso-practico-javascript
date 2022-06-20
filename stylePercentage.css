@@ -34,3 +34,12 @@
     gap: 20px;
     text-align: center;
 }
+.output-text{
+    border: 1px solid green;
+    height: 68px;
+    width: 70%;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--input-background__color);
+    color: var(--input-text__color);
+}
