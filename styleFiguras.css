@@ -22,7 +22,7 @@
 
 .mainContainer section {
     margin: auto;
-    background-color: var(--section__color);
+    /* background-color: var(--section__color); */
     border-radius: 2rem;
     padding: 20px;
     box-shadow: 2px 2px 4px green;

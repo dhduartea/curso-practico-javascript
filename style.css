@@ -27,6 +27,7 @@ body {
 }
 
 input {
+    min-width: 200px;
     padding: 8px;
     background-color: var(--input-background__color);
     color: var(--input-text__color);
@@ -53,4 +54,14 @@ header {
 
 header h1 {
     color: var(--title__color);
+}
+.output-text{
+    border: 1px solid green;
+    min-height: 64px;
+    width: 70%;
+    min-width: 200px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--input-background__color);
+    color: var(--input-text__color);
 }
