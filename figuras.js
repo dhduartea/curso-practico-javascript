@@ -55,24 +55,24 @@ function calcularAreaPerimetroCuadrado() {
     const input = document.getElementById("ladoCuadrado");
     const value = input.value;
     const outputText=document.getElementById("outputRectangle");
-    const perimetro = perimetroCuadrado(value);
-    const area = areaCuadrado(value);
+    const perimetro = perimetroCuadrado(value).toFixed(2);
+    const area = areaCuadrado(value).toFixed(2);
     outputText.innerText=`El cuadrado tiene un perímetro es ${perimetro}cm y su área es ${area}cm^2`;
 }
 
 function calcularAreaPerimetroTriangulo() {
     let valor = parseToNumberTriangle();
-    const perimetro = perimetroTriangulo(valor);
-    const area = areaTriangulo(valor);
     const outputText=document.getElementById("outputTriangle");
+    const perimetro = perimetroTriangulo(valor).toFixed(2);
+    const area = areaTriangulo(valor).toFixed(2);
     outputText.innerText=`El Triangulo tiene un perímetro es ${perimetro}cm y su área es ${area}cm^2`;
 }
 function calcularAreaPerimetroCirculo() {
     const input = document.getElementById("radioCirculo");
     const value = input.value;
     const outputText=document.getElementById("outputCircle");
-    const perimetro = perimetroCirculo(value);
-    const area = areaCirculo(value);
+    const perimetro = perimetroCirculo(value).toFixed(2);
+    const area = areaCirculo(value).toFixed(2);
     outputText.innerText=`El círculo tiene un perímetro de ${perimetro}cm y su área es ${area}cm^2`;
 }
 //Reto, determinar qué tipo de triángulo es 
@@ -82,16 +82,19 @@ function tipoTriangulo() {
     const outputText=document.getElementById("outputTriangle");
     
     if ((valor[0] === valor[1]) && (valor[0] === valor[2])) {
-        altura = alturaTrianguloEquilateroIsosceles(valor[0], valor[0])
+        altura = alturaTrianguloEquilateroIsosceles(valor[0], valor[0]);
+        altura=altura.toFixed(2);
         outputText.innerText=`Triángulo Equilatero y su altura es ${altura}`;
 
     } else if (valor[0] === valor[1]) {
 
-        altura = alturaTrianguloEquilateroIsosceles(valor[0], valor[2])
+        altura = alturaTrianguloEquilateroIsosceles(valor[0], valor[2]);
+        altura=altura.toFixed(2);
         outputText.innerText=`Triángulo Isósceles y su altura es ${altura}`;
 
     } else if (valor[0] === valor[2]) {
-        altura = alturaTrianguloEquilateroIsosceles(valor[0], valor[1])
+        altura = alturaTrianguloEquilateroIsosceles(valor[0], valor[1]);
+        altura=altura.toFixed(2);
         outputText.innerText=`Triángulo Isósceles y su altura es ${altura}`;
 
     } else {
