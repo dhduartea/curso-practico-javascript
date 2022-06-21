@@ -34,3 +34,13 @@
     gap: 20px;
     text-align: center;
 }
+.coupons__input{
+    border: none;
+    border-radius: 8px;
+    background-color: var(--buttom-bacground__color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--input-text__color);
+    padding: 4px 12px;
+    
+}

@@ -20,13 +20,12 @@ function buscarCupon() {
 
 let selectElement = document.getElementById("coupons");
 selectElement.addEventListener("change", (event) => {
-    const porcentajeField=document.getElementById("percentageDiscount");
-    if (event.target.value!=="none") {
+    const porcentajeField = document.getElementById("percentageDiscount");
+    if (event.target.value !== "none") {
         porcentajeField.value = arrayCupons[event.target.value];
         porcentajeField.disabled = true;
-        console.log(arrayCupons[event.target.value]);
-    }else{
+    } else {
         porcentajeField.disabled = false;
+        porcentajeField.value = "";
     }
-    
 })
