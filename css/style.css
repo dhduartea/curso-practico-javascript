@@ -55,6 +55,10 @@ header {
 header h1 {
     color: var(--title__color);
 }
+.main-container{
+    width: 100%;
+    padding: 20px;
+}
 .output-text{
     border: 1px solid green;
     min-height: 64px;

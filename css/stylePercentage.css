@@ -1,8 +1,4 @@
 
-.main-container{
-    width: 100%;
-    padding: 20px;
-}
 .discount-calculator{
     display: flex;
     flex-direction: column;

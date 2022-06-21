@@ -1,0 +1,12 @@
+.average-calculator{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-width: 28rem;
+    max-width: 40rem;
+    padding: 20px;
+    margin: auto;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 4px green;
+    gap: 20px;
+}

@@ -2,11 +2,8 @@
     display: grid;
     grid-auto-rows: minmax(20rem, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    width: 100%;
     place-content: center;
     gap: 20px;
-    padding: 20px;
-
 }
 
 .mainContainer section,
