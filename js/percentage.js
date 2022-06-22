@@ -1,7 +1,7 @@
 function calcularDescuento() {
     const precioTotal = parseInt(document.getElementById("totalPrice").value);
     const porcentaje = parseInt(document.getElementById("percentageDiscount").value);
-    const descuento = precioTotal * (1 - porcentaje / 100);
+    const descuento = Math.round(precioTotal * (1 - porcentaje / 100));
     const outputText = document.getElementById("outputDiscount");
     outputText.innerText = `El precio final del producto es $${descuento}`;
 }
