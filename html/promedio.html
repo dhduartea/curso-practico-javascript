@@ -14,12 +14,14 @@
     </header>
     <main class="main-container">
         <section class="average-calculator">
-            <p>Aquí te ayudaremos a calcular el promedio de cuántos números quieras</p>
+            <p>Aquí te ayudaremos a calcular el promedio de cuantos números quieras</p>
             <form action="" id="averageForm" class="average-form">
-                <label for="cantidadNumeros">
-                    Ingrese de cuántos números queire calcular el promedio
-                    <input type="number" name="cantidadNumeros" id="cantidadNumeros" min="0">
+                <label for="promedioNumeros">
+                    Ingrese los números separados por una coma
                 </label>
+                <input type="text" name="promedioNumeros" id="promedioNumeros">
+                <button type="button" onclick="calcularPromedio()" form="averageForm">Calcular promedio</button>
+                <p class="output-text" id="outputPromedio"></p>
             </form>
         </section>
     </main>

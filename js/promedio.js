@@ -1,14 +1,17 @@
-let prueba=[1,2,4,6,7,3,4,10]
-let prueba2=[1,2,3,4,5,6]
-let prueba3="1,2,3,4,5, 6"
 
-let salida;
-let salida2;
+function calcularPromedio() {
+    const outputText = document.getElementById("outputPromedio");
+    const array=separadorArray();
+    const promedio=array.reduce((previousValue, currentValue) => previousValue + currentValue) / array.length;
+    outputText.innerText=(`El promedio de [${array}] es ${promedio}`);
+}
 
-salida=prueba2.reduce((previousValue, currentValue)=>previousValue+currentValue)/prueba2.length;
-prueba3=prueba3.replace(" ", "");
-salida2=prueba3.split(",");
-console.log(salida2);
-console.log(salida);
-
+function separadorArray() {
+    let array=document.getElementById("promedioNumeros").value;
+    array = array.replace(" ", "");
+    array = array.split(",");
+    array=array.map(x=>parseInt(x));
+    console.log(array);
+    return array;
+}
 

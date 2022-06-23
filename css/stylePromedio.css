@@ -10,3 +10,11 @@
     box-shadow: 2px 2px 4px green;
     gap: 20px;
 }
+/* .average-calculator .average-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+} */
