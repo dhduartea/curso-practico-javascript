@@ -3,24 +3,21 @@
     grid-auto-rows: minmax(20rem, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     place-content: center;
+    padding: 20px;
     gap: 20px;
 }
 
 .mainContainer section{
     display: flex;
     height: 100%;
+    min-width: 28rem;
+    max-width: 40rem;
     flex-direction: column;
-    justify-content: center;
+    place-content: center;
+    place-self: center;
     align-items: center;
     gap: 20px;
-
-}
-
-.mainContainer section {
-    margin: auto;
-    /* background-color: var(--section__color); */
     border-radius: 2rem;
     padding: 20px;
     box-shadow: 2px 2px 4px green;
-
 }

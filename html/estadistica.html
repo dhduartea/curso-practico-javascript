@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleEstadistica.css">
+    <title>Promedio</title>
+</head>
+<body>
+    <header>
+        <h1>Medidas de tendencia central</h1>
+    </header>
+    <main class="main-container">
+        <section class="medidas-calculator">
+            <p>Aquí te ayudaremos a calcular el promedio, la mediana y la moda de cuantos números quieras</p>
+            <form action="" id="medidasForm" class="medidas-form">
+                <label for="medidaNumeros">
+                    Ingrese los números separados por una coma
+                </label>
+                <input type="text" name="medidaNumeros" id="medidaNumeros">
+                <button type="button" onclick="calcularPromedio()" form="medidasForm">Calcular promedio</button>
+                <button type="button" onclick="calcularMediana()" form="medidasForm">Calcular Mediana</button>
+                <button type="button" onclick="calcularModa()" form="medidasForm">Calcular Moda</button>
+                <p class="output-text" id="outputMedida"></p>
+            </form>
+        </section>
+        
+    </main>
+    <script src="../js/estadistica.js"></script>
+</body>
+</html>
