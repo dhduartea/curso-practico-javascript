@@ -1,3 +1,8 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh
+}
 header h1{
     text-align: center;
     width: 100%;
@@ -44,6 +49,8 @@ header h1{
 footer{
     display: flex;
     gap: 10px;
+    margin-top:auto;
+    padding: 20px;
 }
 footer a{
     color: var(--input-text__color);
