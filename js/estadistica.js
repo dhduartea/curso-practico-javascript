@@ -1,11 +1,3 @@
-
-function calcularPromedio() {
-    const outputText = document.getElementById("outputMedida");
-    const array=separadorArray();
-    const promedio=array.reduce((previousValue, currentValue) => previousValue + currentValue) / array.length;
-    outputText.innerText=(`El promedio de [${array}] es ${promedio.toFixed(1)}`);
-}
-
 function separadorArray() {
     let array=document.getElementById("medidaNumeros").value;
     array = array.replace(" ", "");
@@ -14,6 +6,20 @@ function separadorArray() {
     console.log(array);
     return array;
 }
+
+function calcularMediaGeometrica() {
+    const outputText = document.getElementById("outputMedida");
+    const array=separadorArray();
+    const mediaGeometrica=(array.reduce((previousValue, currentValue) => previousValue * currentValue))**(1/array.length);
+    outputText.innerText=(`La media geométrica de [${array}] es ${mediaGeometrica.toFixed(1)}`);
+}
+function calcularPromedio() {
+    const outputText = document.getElementById("outputMedida");
+    const array=separadorArray();
+    const promedio=array.reduce((previousValue, currentValue) => previousValue + currentValue) / array.length;
+    outputText.innerText=(`El promedio de [${array}] es ${promedio.toFixed(1)}`);
+}
+
 function calcularMediana() {
     const outputText = document.getElementById("outputMedida");
     let mediana;
