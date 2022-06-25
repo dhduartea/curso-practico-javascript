@@ -1,7 +1,7 @@
 :root {
     --background__color: #181a18;
-    --text__color: #FFF;
-    --title__color: #c1d1b1;
+    --text__color: #c1d1b1;
+    --title__color: #FFF;
     --input-text__color: #97dd97;
     --section__color: #253625;
     --input-background__color: #3e583e;
@@ -25,7 +25,9 @@ body {
     color: var(--text__color);
     background-color: var(--background__color);
 }
-
+a{
+    text-decoration: none;
+}
 input {
     min-width: 200px;
     padding: 8px;
@@ -55,13 +57,26 @@ button {
 }
 
 header {
+    display: flex;
+    width: 100%;
     padding: 20px;
     background-color: var(--section__color);
     border-radius: 0px 0px 8px 8px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     color: var(--title__color);
+}
+header .fa-house{
+    color: var(--title__color);
+    font-size: 3rem;
+    height: 100%;
+    cursor: pointer;
+}
+header .fa-house:hover{
+    color: var(--icons-color);
 }
 .main-container{
     width: 100%;
