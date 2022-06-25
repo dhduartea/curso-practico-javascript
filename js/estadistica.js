@@ -54,10 +54,6 @@ function calcularModa() {
             moda.push(numeros[index]);
         }
     }
-    console.log(contador);
-    console.log(numeros);
-    console.log(mayor);
-    console.log(moda);
-    outputText.innerText=(`La moda de [${array}] es ${moda}`);
+
     
 }
