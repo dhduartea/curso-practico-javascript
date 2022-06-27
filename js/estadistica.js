@@ -3,7 +3,7 @@ function separadorArray() {
     array = array.replace(" ", "");
     array = array.split(",");
     array=array.map(x=>parseInt(x));
-    console.log(array);
+    // console.log(array);
     return array;
 }
 
@@ -54,6 +54,5 @@ function calcularModa() {
             moda.push(numeros[index]);
         }
     }
-
-    
+    outputText.innerText=`La moda de [${array}] es ${moda}`;
 }
